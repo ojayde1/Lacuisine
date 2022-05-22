@@ -1,0 +1,620 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Quicksand', sans-serif;
+     text-transform: capitalize;
+     transition: all .3s linear;
+     font-size: 1.7rem;
+}
+
+html{
+     font-size: 63%;
+     scroll-behavior: smooth;
+}
+
+body{
+     
+     font-family: 'Quicksand', sans-serif;
+     overflow-x: hidden;
+    
+
+}
+
+h1 h2 h3 h4 h5 h6{
+     font-weight:800 ;
+}
+
+
+h3{
+     font-weight: bolder;
+     font-family: 'Square Peg', cursive;
+     font-size: 1.8em;
+     color: #493323;
+}
+
+hr{
+     color: gold;
+     font-weight: bold;
+}
+p{
+     font-family: 'Cantarell', sans-serif;
+  
+}
+
+
+.logo img {
+     height: 55px;
+     width: auto;
+ }
+#header {
+          width: 100%;
+          position: fixed;
+          top: 0; left: 0; right: 0;
+          background: #493323;
+          padding:1rem 7%;
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+          z-index: 1000; 
+     }
+
+
+
+
+.fa-times{
+     transform: skew(-180deg) rotate(-180deg);
+}
+.fa-hamburger{
+     display: none;
+     font-size: 3rem;
+     z-index: 1000;
+     color: goldenrod;
+     display: none;
+    
+
+}
+
+
+#header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;      
+}
+
+#header li{
+     margin-right: 4rem;
+     
+}
+
+#header a{
+     color:#F7EF8A;
+     font-size: 1.8rem;
+     text-decoration: none;
+     font-weight: 900;
+}
+
+#header a:hover{
+color: white;
+}
+
+.header-active{
+   background:black;
+   height: 6rem;
+   box-shadow: 2rem 0 .5rem #000;
+}
+
+.header-active nav ul{
+     margin: 0;
+}
+
+#home{
+     background: linear-gradient(0deg, rgba(0,0,0,.6), rgba(0,0,0,.6));
+     position: relative;  
+}
+
+#home h1{
+     font-weight: bold;
+     font-size: 4rem;
+     color: white;
+} 
+#home h2 {
+     color: #fff;
+}
+
+#home p{
+     color: #fff;
+}
+
+.btn{
+     font-size: 14px;
+     font-weight: 500;
+     padding: 7px 7px 5px;
+     border-radius: 10px 10px 10px 10px;
+     transition: all 0.3s ease;
+}
+
+.btn-warning{
+     background-color: goldenrod;
+     border-color: goldenrod;
+     
+}
+
+.video-container{
+     position: absolute;
+     top: 0; left: 0;
+     height: 50vh;
+     width: 100%;
+     z-index: -1;
+}
+
+.vid{
+     position: absolute;
+     height: 100vh;
+     width: 100%;
+     object-fit: cover;
+     display: none;
+}
+
+.vid1{
+     display: block;
+}
+
+.vid-1{
+     display: block;
+}
+
+
+.controls{
+     position: absolute;
+     bottom: 14%; left: 50%;
+     transform: translate(-50%);
+     display: flex;
+}
+
+.dots{
+     height: 1rem;
+     width: 1rem;
+     border-radius: 50%;
+     cursor: pointer;
+     background:goldenrod;
+     margin: 0 1rem;
+}
+
+.dots:hover{
+     background: white;
+}
+
+.counter-section{
+     background-color: #1B1A17;
+     padding: 2.5rem 0;
+}
+
+.counter-section h2{
+     color: gold;
+}
+
+.counter-section p{
+     color: #fff;
+}
+
+#service{
+     text-align: center;
+     justify-content: center;
+     padding-top: 5rem;
+}
+
+#service .food-logo img{
+     height: 100px;
+     width: auto;
+     float: left;
+}
+
+.service{
+     position: relative;
+     overflow: hidden;
+     margin-top: 25px;
+}
+
+.service a:hover{
+     color: gold;
+}
+
+.service img{
+     transition: all 1s ease;
+}
+
+.service a{
+     color: #493323;
+     width: 100px;
+     height: 100px;
+     display: grid;
+     text-align: center;
+     align-content: center;
+     background-color: white;
+     font-weight: 600;
+     position: absolute;
+     top: 63%;
+     left: 50%;
+     border-radius: 100%;
+     transform: translate(-50%, -50%);
+     transition: all 0.3s ease;
+     visibility: hidden;
+     opacity: 0;
+   
+}
+
+.service:hover img{
+     transform: scale(1.1);
+}
+
+.service:hover a{
+     visibility: visible;
+     opacity: 1;
+     top: 50%;
+}
+
+
+#about{
+     position: relative;
+     background-color: #F9F9F9;
+     padding-top: 8rem;
+
+}
+#about .chef-image{
+     position: absolute;
+     top: 50px;
+     left: 70rem;
+     width: 40vw;
+     float: right;
+}
+
+#about .food-logo img{
+     height: 100px;
+     width: auto;
+     float: left;    
+}
+
+#about h3 span{
+   color: gold;
+}
+
+.story-section{
+     width: 100%;
+     height: 28.125rem;
+     background-image: url(images/pexels-valeria-boltneva-1833349.jpg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     padding-top: 6rem;
+     text-align: center;
+}
+
+#explore-food .food-logo img{
+     height: 100px;
+     width: auto;
+     float: left;
+    
+}
+
+#explore-food h3 span{
+  color: gold;
+}
+
+#explore-food{
+     padding-top: 8rem;
+     padding-bottom: 4rem;
+     background-color: #F9F9F9;
+}
+
+.explore-food .card{
+ background: transparent;
+ border-radius: 0 4rem 1rem 0;
+ background-color: whitesmoke;
+}
+
+.explore-food .card img{
+  border-radius: 0 4rem 0 4rem;
+  object-fit: cover;
+}
+
+.explore-food .card span{
+     display: block;
+     font-weight: 700;
+     padding-bottom: 1rem;
+     color: goldenrod;
+     border-bottom: 0.06 solid goldenrod;
+}
+
+.explore-food .card span del{
+     color: grey;
+}
+
+.explore-food .card hr{
+     color: goldenrod;
+}
+
+#explore-food .btn{
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+#testimonial{
+     background-image: url(images/pexels-volkan-vardar-3887985.jpg);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     text-align: center;
+     justify-content: center;
+     padding-bottom: 4rem;
+     padding-top: 4rem;
+}
+
+#testimonial h3{
+     color: gold;
+}
+
+
+#team h3 span{
+     color: gold;
+}
+
+#team .food-logo img{
+     height: 100px;
+     width: auto;
+     float: right;
+}
+
+#team{
+     padding-top: 5rem;
+     padding-bottom: 6rem;
+}
+
+#team h3{
+     text-align: center center;
+     justify-content: center;
+     text-justify: auto;
+}
+
+#team .card{
+     background-color: whitesmoke;
+     border-radius: .7rem;
+     text-align: center;
+}
+
+#team .card img{
+     border-radius: .7rem .7rem 0 0;
+}
+
+#team .card h4{
+     color: goldenrod;
+    text-transform: uppercase; 
+}
+
+#team .social-icon i{
+     font-size:1.1rem ;
+     transition: all 1s ease;
+     background-color: #000;
+     border-radius: 50%;
+     margin: .4rem;
+     color: goldenrod;
+     width: 2.1rem;
+     height: 2.1rem;
+     line-height: 2.1rem;
+}
+
+
+#team .social-icon i:hover{
+     color: black;
+     background-color: goldenrod;
+     transition: all .1s ease;
+}
+
+#book-food{
+     width: 100%;
+     background-image: url(images/pexels-pixabay-262978.jpg);
+     background-position: 0 4.4945rem;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 7.375rem 0;
+     background-attachment: fixed;
+}
+
+#download-app h3 span{
+     color: gold;
+}
+
+#download-app{
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-color: #F9F9F9;
+     padding-top: 3rem;
+}
+
+#contact .food-logo img{
+     height: 80px;
+     width: auto;
+     float: right;
+}
+
+#contact h3 span{
+     color: gold;
+}
+
+#contact{
+     font-size: 4rem;
+     padding-bottom: 4rem;
+     padding-top: 6rem;
+     
+}
+
+#footer{
+     background-color: #493323;
+     padding-top: 4rem;
+}
+
+#footer .footer-link{
+     font-size: 1.3rem;
+     padding: 0 1.2rem;
+     margin-top: 3rem;
+}
+
+#footer a{
+     font-size: 1.5rem;
+     padding: 0 1rem;
+     color:#F7EF8A;
+     font-weight: 900;
+     text-decoration: none;
+}
+
+#footer .fa-copyright {
+     color: #fff;
+}
+
+#footer p{
+     font-weight: 900;
+     color: #fff;
+}
+
+#footer li{
+     margin-right: 4rem;
+     
+}
+
+#footer a:hover{
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px)and (min-width: 300px){
+      
+.fa-hamburger{
+     display: block ;
+} 
+
+nav{
+     position: fixed;
+     top:0; left:-120%;
+     height:100vh;
+     width:30rem;
+     background: #1B1A17;
+}
+
+#header ul{
+     flex-flow: column;
+     justify-content: center;
+     height: 100%;
+}
+#header li{
+     margin: 4rem 0;
+}
+#header a{
+     font-size: 2.3rem;
+     border-radius: 5rem;
+}
+#header a:hover{
+     padding: .5rem 3.5rem;
+     color: #333;
+     background-color: gold;
+     
+}
+
+.nav-toggle{
+     top:0; left:0;
+}
+#about{
+     margin-top: 3rem;
+}
+#about .chef-image{
+ max-width:100%;
+ width:100%;
+ object-fit: cover;
+}
+#footer .footer-link,
+#footer a i{
+     padding: 0 0.7rem;
+}
+
+#team .social-icon i{
+   
+     transition: all 1s ease;
+     background-color: #000;
+     border-radius: 50%;
+     margin: .4rem;
+     color: goldenrod;
+     width: 2.1rem;
+     height: 2.1rem;
+     line-height: 2.1rem;
+
+}
+
+
+#team .social-icon i:hover{
+     transition: all 1s ease;
+    
+}
+
+
+.service a{
+     width: 60px;
+     height: 60px;
+     font-weight: 400;
+     text-decoration: none;
+}
+.service img{
+     transition: all 1s ease;
+     height: auto;
+}
+.download-app h3{
+  text-align: center;
+}
+
+}
