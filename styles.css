@@ -616,5 +616,10 @@ nav{
 .download-app h3{
   text-align: center;
 }
+     .w-50 {
+     width: 80% !important;
+
+}
+
 
 }
