@@ -535,6 +535,11 @@ color: white;
 
 
 @media (max-width:991px)and (min-width: 300px){
+     
+body{
+     overflow-x: hidden !important;
+}
+
       
 .fa-hamburger{
      display: block ;
