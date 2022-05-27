@@ -537,8 +537,10 @@ color: white;
 
 @media (max-width:991px)and (min-width: 300px){
      
-body{
+html, body{
      overflow-x: hidden !important;
+     width: 100% !important;
+     
 }
 
       
