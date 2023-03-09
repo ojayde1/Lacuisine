@@ -494,47 +494,6 @@ color: white;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:991px)and (min-width: 300px){
      
 html, body{
@@ -559,7 +518,8 @@ nav{
 #header ul{
      flex-flow: column;
      justify-content: center;
-     height: 100%;
+     margin-top: 4rem;
+     height: 80vh;
 }
 #header li{
      margin: 4rem 0;
